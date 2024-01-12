@@ -7,13 +7,14 @@
   padding: 0;
   font-family: "Lato", sans-serif;
   font-family: "Open Sans", sans-serif;
-  font-family: "Work Sans" sans-serif;
+  font-family: "Work Sans", sans-serif;
+  box-sizing: border-box;
 }
 
 .primary-btn {
-  margin-top: 1rem;
+  margin-top: 2rem;
   padding: 1.25rem 1.56rem;
-  border-radius: 8px;
+  border-radius: 0.5rem;
   background: #ff900e;
   outline: none;
   border: none;
@@ -27,14 +28,13 @@
 /* -----header style----- */
 header {
   width: 100%;
-  /* height: 1322px; */
   background: rgba(255, 144, 14, 0.1);
 }
 nav {
   width: 75%;
   max-width: 90rem;
   margin: 0 auto;
-  padding: 3.12rem 0;
+  padding: 1.5rem 0 1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -74,6 +74,7 @@ nav h3 {
   font-weight: 700;
 }
 .banner-text > p {
+  margin-top: 1rem;
   color: #727272;
   font-size: 1rem;
   font-weight: 400;
@@ -84,8 +85,42 @@ nav h3 {
   width: 75%;
   max-width: 90rem;
   margin: 1rem auto 0;
+  padding-bottom: 2rem;
 }
 .banner-img > img {
   width: 100%;
   height: auto;
+}
+
+/* -----Responsive Styles ----- */
+/* ---Mobile---- */
+@media screen and (max-width: 576px) {
+  .banner-text,
+  .banner-img,
+  nav {
+    width: 90%;
+    flex-direction: column;
+  }
+  .nav-links {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+  }
+}
+
+/* ---Medium devices (tablets)-----  */
+@media screen and (min-width: 576px) and (max-width: 1024px) {
+  .banner-text {
+    width: 75%;
+  }
+  .banner-img,
+  nav {
+    width: 85%;
+  }
+  .nav-links {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+  }
 }
