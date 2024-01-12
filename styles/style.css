@@ -11,6 +11,9 @@
   box-sizing: border-box;
 }
 
+.gray-text {
+  color: #727272;
+}
 .primary-btn {
   margin-top: 2rem;
   padding: 1.25rem 1.56rem;
@@ -75,7 +78,6 @@ nav h3 {
 }
 .banner-text > p {
   margin-top: 1rem;
-  color: #727272;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.6rem;
@@ -91,12 +93,59 @@ nav h3 {
   width: 100%;
   height: auto;
 }
+/* --------Header style end------ */
+
+/* ----Main container Styles start------ */
+
+main {
+  width: 75%;
+  max-width: 90rem;
+  margin: 5rem auto;
+}
+
+.teams-container {
+  width: 90%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 4rem;
+  align-items: center;
+  margin: 0 auto;
+}
+.teams-img-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+.teams-img-container img {
+  width: 100%;
+}
+
+.teams-contents-text > h3 {
+  font-size: 2.8rem;
+  font-weight: 500;
+}
+.teams-contents-text > h3 > strong {
+  color: #131313;
+  font-size: 2.8rem;
+  font-weight: 700;
+}
+.teams-contents-text > h3 > span {
+  color: #ff900e;
+  font-size: 2.8rem;
+  font-weight: 700;
+}
+.teams-contents-text > p {
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.5rem;
+}
 
 /* -----Responsive Styles ----- */
 /* ---Mobile---- */
 @media screen and (max-width: 576px) {
   .banner-text,
   .banner-img,
+  main,
   nav {
     width: 90%;
     flex-direction: column;
@@ -107,6 +156,10 @@ nav h3 {
     justify-content: space-between;
     margin-top: 1rem;
   }
+  .teams-container,
+  .teams-img-container {
+    grid-template-columns: 1fr;
+  }
 }
 
 /* ---Medium devices (tablets)-----  */
@@ -115,6 +168,7 @@ nav h3 {
     width: 75%;
   }
   .banner-img,
+  main,
   nav {
     width: 85%;
   }
@@ -122,5 +176,17 @@ nav h3 {
     width: 50%;
     display: flex;
     justify-content: space-between;
+  }
+  .teams-container {
+    grid-template-columns: 1fr;
+    grid-auto-flow: row;
+  }
+
+  .teams-container > *:nth-child(2) {
+    order: -1;
+  }
+
+  .teams-container > *:nth-child(1) {
+    order: 1;
   }
 }
