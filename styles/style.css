@@ -14,6 +14,11 @@
 .gray-text {
   color: #727272;
 }
+.section-title {
+  color: #131313;
+  font-size: 2.8rem;
+  font-weight: 700;
+}
 .primary-btn {
   margin-top: 2rem;
   padding: 1.25rem 1.56rem;
@@ -43,12 +48,6 @@ nav {
   align-items: center;
 }
 
-nav h3 {
-  color: #131313;
-  font-size: 2.8rem;
-  font-weight: 700;
-  cursor: pointer;
-}
 .nav-links {
   width: 33%;
   display: flex;
@@ -102,6 +101,7 @@ main {
   max-width: 90rem;
   margin: 5rem auto;
 }
+/* ----teams Styles start------ */
 
 .teams-container {
   width: 90%;
@@ -139,6 +139,41 @@ main {
   font-weight: 700;
   line-height: 1.5rem;
 }
+/* ----teams Styles end------ */
+
+/* ----facts style---- */
+.facts-container {
+  width: 100%;
+  margin: 5rem 0 1rem;
+}
+.facts-container > h3 {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+.facts-card-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 5rem 0;
+  gap: 1rem;
+}
+.facts-card-container .cards {
+  text-align: center;
+  padding: 1rem;
+  font-weight: 600;
+  font-weight: 600;
+  border-radius: 8px;
+  border: 1px solid #ff900e;
+}
+.facts-card-container .cards h3 {
+  font-size: 2.8rem;
+  color: #424242;
+}
+.facts-card-container .cards p {
+  font-size: 1.25rem;
+}
 
 /* -----Responsive Styles ----- */
 /* ---Mobile---- */
@@ -146,7 +181,8 @@ main {
   .banner-text,
   .banner-img,
   main,
-  nav {
+  nav,
+  .facts-card-container {
     width: 90%;
     flex-direction: column;
   }
