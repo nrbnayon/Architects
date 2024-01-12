@@ -1,0 +1,7 @@
+* {
+  @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&family=Merriweather:wght@400;900&family=Open+Sans:wght@300..800&family=Roboto:wght@400;500;700;900&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap")
+    margin: 0;
+  padding: 0;
+  width: 75%;
+  max-width: 1440px;
+}
