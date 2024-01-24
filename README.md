@@ -1,1 +1,1 @@
-[Live] - (https://nrbnayon.github.io/Architects/)
+[Live](https://nrbnayon.github.io/Architects/)
